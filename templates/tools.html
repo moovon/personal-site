@@ -1,0 +1,138 @@
+{% extends "layout.html" %}
+  
+{% block css %}
+<link href="{{ url_for('static', filename='css/tools.css') }}" rel="stylesheet" type="text/css">
+<style>
+body{
+   /*background-image: url("../static/images/tool2.png"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+
+    /*background-repeat: no-repeat;*/
+       background-color: #03a9f4;
+background-size: 100% 100%;
+background-attachment: fixed;
+
+
+  }
+
+#tools{
+	z-index: -2;
+}
+
+  </style>
+{% endblock %}
+
+
+{% block content %}
+
+
+  <div id="contacthead" style="opacity: 0.4;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOOLS</div>
+
+
+
+
+<div id="tools">
+
+        <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/gae.jpg" alt=""/>
+                   <figcaption>
+                      <h2>Google App Engine</h2>
+                      <p>Great place to host your webapps! This site,too uses GAE as Host. </p>
+                   </figcaption>
+                  </figure>
+                
+            </li>
+        </ul>
+  
+        <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/cygwin.png" alt=""/>
+                   <figcaption>
+                      <h2>Linux-Terminal for windows</h2>
+                      <p>Extremely useful for windows users to get the power of linux to an extent.</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+    
+        <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/astudio.png" alt=""/>
+                   <figcaption>
+                      <h2>Android Studio</h2>
+                      <p>Have developed few android apps using Android studio.</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+
+
+        <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/pycharm.png" alt=""/>
+                   <figcaption>
+                      <h2>Pycharm</h2>
+                      <p>Best Python IDE for developing any kind of python app. But free for one trial monthly only! </p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+
+
+        <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/heroku.jpg" alt=""/>
+                   <figcaption>
+                      <h2>HEROKU</h2>
+                      <p>To me its the simplest cloud storage for your webapps(supports many languages).</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+    
+   <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/office.jpg" alt=""/>
+                   <figcaption>
+                      <h2>Microsoft Office</h2>
+                      <p>Probably one of the first thing that I did in computer was to use word.</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+
+
+
+           <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/gitty.png" alt=""/>
+                   <figcaption>
+                      <h2>GIT</h2>
+                      <p>Thanks Linus Torvals for the awesome kit. It would have been trouble-full life for a developer without git.</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+
+
+           <ul class="demo-3">
+            <li>
+                <figure>
+                    <img src="../static/images/sublime.jpg" alt=""/>
+                   <figcaption>
+                      <h2>Sublime Text3</h2>
+                      <p>One of my favorite editor. All the codes for the site I have written in Sublime Text3 only from line-1 to end.</p>
+                   </figcaption>
+                  </figure>
+            </li>
+        </ul>
+</div>
+<div style="position:absolute; top:1000px;">...</div>
+{% endblock %}

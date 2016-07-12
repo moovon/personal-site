@@ -1,0 +1,17 @@
+{% extends "blog.html" %}
+
+{% block postlist %}
+
+<div style="color:white; font-size: 18px; background-color:   #607d8b; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; padding-top: 20px;">
+<!--post your article here-->
+<a href="{{ url_for('iitjee') }}"  title="secret hacks, tricks, tips for jee" style="color:yellow;">7. Seceret Hacks, tricks, tips for JEE</a><br>
+	<a href="{{ url_for('motivationalstory1') }}"  title="Motivation Story-1" style="color:white;">6.Motivational Story-1</a><br>
+    <a href="{{ url_for('conclusion2015') }}"  title="Summarizing 2015!" style="color:yellow;">5.Summing up 2015!</a><br>
+    <a href="{{ url_for('pytoexeusingcxfreeze') }}"  title="Convert .py python files to .exe using cx_Freeze !" style="color:white;">4. Convert .py python files to .exe!</a><br>
+    <a href="{{ url_for('getpiponwindows') }}"  title="Get Pip on windows!" style="color:yellow;">3. Get Pip on windows!</a><br>
+    <a href="{{ url_for('installubuntu') }}"  title="HOW TO INSTALL UBUNTU USING BOOTABLE PEN-DRIVE!" >2. Install Ubuntu(Bootable pendrive)</a><br>
+	<a href= "{{ url_for('loveschool') }}"  title="Admission to Love School." style="color: yellow;"> 1. Admission to Love School.</a>
+<!--article end-->
+</div>
+{% endblock %}
+

@@ -1,0 +1,233 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<meta charset="UTF-8" />
+        <meta name="description" content="Animated Text and Icon Menu with jQuery" />
+        <meta name="keywords" content="jquery, menu, navigation, sliding, animation, icon" />
+		<meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="../static/css/style2.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/stimenu.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Wire+One&v1' rel='stylesheet' type='text/css' />
+		<link href="{{ url_for('static', filename='css/style2.css') }}" rel="stylesheet" type="text/css">
+		<link href="{{ url_for('static', filename='css/stimenu.css') }}" rel="stylesheet" type="text/css">
+<style>
+body{
+   /*background-image: url("../static/images/langy.png"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+
+    /*background-repeat: no-repeat;*/
+    background-color: #03a9f4;
+background-size: 100% 100%;
+background-attachment: fixed;
+
+  }
+  .modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+body.modal-open .background-container{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+    filter: url("https://gist.githubusercontent.com/amitabhaghosh197/b7865b409e835b5a43b5/raw/1a255b551091924971e7dee8935fd38a7fdf7311/blur".svg#blur);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+}
+  </style>
+	
+{% endblock %}
+
+
+{% block moovon %}
+
+<div class="container-fluid" style="padding-top: 75px;">
+<div class="row">
+<div class="col-lg-offset-4 col-lg-6 col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 ">
+<img class="img-responsive"class="img-responsive" style="" src="../static/images/project3.png" onMouseOver="this.src='../static/images/project4.png'" onMouseOut="this.src='../static/images/project3.png'">
+
+</div>
+</div>
+
+
+
+
+
+
+		
+			
+      
+			<ul id="sti-menu" class="sti-menu">
+				<li data-hovercolor="#37c5e9">
+					<a href="#" data-toggle="modal" data-target="#skplayer">
+						<h2 style="color:#03a9f4" data-type="mText" class="sti-item">SK-Player</h2>
+						<h3 data-type="sText" class="sti-item"></h3>
+						<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+					</a>
+				</li>
+
+       
+				<li data-hovercolor="#ff395e">
+					<a href="#" data-toggle="modal" data-target="#spojscrapper" >
+						<h2 style="color:#03a9f4" data-type="mText" class="sti-item">SpojScrap</h2>
+						<h3 data-type="sText" class="sti-item"></h3>
+						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+					</a>
+				</li>
+        
+        
+                <li data-hovercolor="#ff395e">
+          <a href="#" data-toggle="modal" data-target="#C2P" >
+            <h2 style="color:#03a9f4" data-type="mText" class="sti-item">C2P</h2>
+            <h3 data-type="sText" class="sti-item"></h3>
+            <span data-type="icon" class="sti-icon sti-icon-C2P sti-item"></span>
+          </a>
+        </li>
+				</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<!--SKPLAYER MODAL-->
+<div class="modal fade" id="skplayer" role="dialog" style="z-index:5000;">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <img class="img-responsive"src="../static/images/skplayerproject.png">
+        </div>
+        
+        <div class="modal-body">
+          <p style="font-size:18px; color: #757575;">An Android Based Mp3 Player for Android phones and tablets(kitkat and over versions are supported).
+<br> It has been built from complete scratch.
+<br>It includes all basic functions : play, pause, next, previous, repeat a song, shuffle the playlist.<br>
+The entire code can be found here : <a href="https://github.com/moovon/SK-Player-android-Music-Player-" style="background:none;" target="_blank"><img class="img-responsive"src="../static/images/skgit.png"></a>
+</p>
+
+   		</div>
+        
+        <div class="modal-footer">
+        <p style="font-size:18px; color: #8bc34a;">You can also download application here : <a style="background:none;" title="click here to download the apk file"href="../static/SKPlayer.apk" download="SKPlayer.apk"><img class="img-responsive"onMouseOver="this.src='../static/images/downloadsk1.png'" onMouseOut="this.src='../static/images/downloadsk.png'" src="../static/images/downloadsk.png"  onclick="this.src='../static/images/downloadsk.png'"  ></a></p>
+          <button type="button" data-number="1" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+<!--SKPLAYER MODAL-->
+
+
+
+
+
+
+<!--SPOJSCRAPPER-->
+<div class="modal fade" id="spojscrapper" role="dialog" style="z-index:5000;">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <img class="img-responsive"src="../static/images/spojscrapperproject.png">
+        </div>
+        
+        <div class="modal-body">
+          <p style="font-size:16px; color: #0d47a1;">SpojScrapper scraps the details of a username(input), namely:
+<br>
+
+> Full Name of the User(if provided by the user)<br>
+> World Rank and Total Points<br>
+> Number of Problems solved<br>
+> Number of Solutions submitted<br><hr>
+<br>(screenshot GUI)<br>
+<img class="img-responsive"src="../static/images/spojscrapperscreenshot.JPG">
+<hr>
+<text style="color:#009688;" >The entire GUI application is build in python using the GUI library TKINTER.<br>
+Other librares have been used like beautifulsoup4, requests.</text>
+<hr><p style="color: #f44336;">
+HOW TO USE:<br>
+
+1)Enter the username in the field provided.<br>
+2) Press "Enter" or click "Scrap details"<br>
+and you are done! 
+</p>
+<hr>
+The Source code for the terminal version : <a href="https://github.com/moovon/spojscrap" style="background:none;" target="_blank"><img class="img-responsive"style="position:relative; top:10px;" src="../static/images/spojscrappergit1.png"></a><br>
+The Source code for the GUI version : <a href="https://github.com/moovon/SpojScrap-GUI" style="background:none;" target="_blank"><img class="img-responsive"style="position:relative;
+top:20px;" src="../static/images/spojscrappergit2.png"></a>
+</p>
+<hr>
+<p style="color:#607d8b;">For installation (other than .exe formats)and other details, read the documentation here : <a style="background:none;position:relative; top:20px;" target="_blank" href="../static/staticfiles/documentation.txt"><img class="img-responsive"src="../static/images/documentation.png"></a></p>
+
+   		</div>
+        
+        <div class="modal-footer">
+        <p style="font-size:18px; color: #ffffff; background:#ff5252;">You can also download the .exe file here : <a id="exewaiting"style="background:none;" title="click here to download the apk file"href="../static/Spoj-Scrapper.exe" download="SKPlayer.apk"><img class="img-responsive"onMouseOver="this.src='../static/images/downloadspojscrapper2.png'" onMouseOut="this.src='../static/images/downloadspojscrapper1.png'" src="../static/images/downloadspojscrapper1.png"   
+        onclick="document.getElementById('exewaitingpara').innerHTML = 'Please wait 10-15 seconds before your download starts. '"></a>
+        <p style="background:grey; color:white;" id="exewaitingpara"></p>
+          <button type="button" data-number="2" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+<!--SPOJSCRAPPER-->
+
+
+
+
+<!--C2P-Codechef-->
+<div class="modal fade" id="C2P" role="dialog" style="z-index:5000;">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <!--<img class="img-responsive"src="../static/images/skplayerproject.png">-->
+           <text style="font-size: 20px;">C2P</text>
+        </div>
+        
+        <div class="modal-body">
+          <p style="font-size:18px; color: #757575;">A chrome extension for making practice easy in codechef.
+<br> In Codechef, if you want to practice previous contest, then you can't submit the solutions directly from contest page.
+<br>You have to search for the problem in the problem archive, which is quite uncomfortable and uneasy.<br>
+<br>This extension helps you out here - once you are in the contest problem page and you want to submit solution for the problem,
+just click on the extension icon and then click "go to practice page". And You can now submit the solution! :) 
+The code can be found here : <a href="https://github.com/moovon/C2P-Codechef" style="background:none;" target="_blank"><img class="img-responsive"src="../static/images/skgit.png"></a>
+<br>
+How to use : <br>1)Go to "chrome://extension" (Type in the browser without quotes) <br>2)tick the "developer mode" <br>3)Load the folder of C2P either from github or the link provided below. ("Load unpacked extension"). <br>4)You will see a new icon in the toolbar! <br> 5) Go to any previous practice contest and open a problem and click on the new icon of c2p and keep solving.
+</p>
+      </div>
+        
+        <div class="modal-footer">
+        <p style="font-size:18px; color: #8bc34a;">You can also download the extension from here : <a onMouseOver="c2pdownload.style.background='#ffc107'" onMouseOut="c2pdownload.style.background='#8bc34a'"style="background:none;" title="click here to download the apk file"href="../static/c2p.zip" ><!--<img class="img-responsive"onMouseOver="this.src='../static/images/downloadsk1.png'" onMouseOut="this.src='../static/images/downloadsk.png'" src="../static/images/downloadsk.png"  onclick="this.src='../static/images/downloadsk.png'"  >--> <text id="c2pdownload" style="background:  #8bc34a;">Download c2p</text></a></p>
+          <button type="button" data-number="1" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+<!--C2P-Codechef-->
+
+{% endblock %}
+
+
+
+
+
+
+
+

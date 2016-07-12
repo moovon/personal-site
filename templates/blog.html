@@ -1,0 +1,118 @@
+{% extends "layout.html" %}
+
+{% block css %}
+<style>
+
+body{
+   /*background-image: url("../static/images/langy.png"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+
+    /*background-repeat: no-repeat;*/
+    background-color: #03a9f4;
+background-size: 100% 100%;
+background-attachment: fixed;
+
+  }
+#posts{
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	
+}
+#posts{
+background-color: #03a9f4;
+background-size: 90% 90%;
+background-attachment: fixed;
+color: #81d4fa;
+}
+
+#secretgreen{
+	color: #ffffff;
+	background-color:  #8bc34a;
+}
+#secretblue{
+	color: #ffffff;
+	background-color:  #01579b;
+}
+#secretpink{
+	color: #ffffff;
+	background-color:  #e91e63;
+}
+#secretred{
+	color: #ffffff;
+	background-color:  #ff5252;
+}
+#secretlightblue{
+	color: #ffffff;
+	background-color:  #03a9f4;
+}
+#secretorange{
+	color: #ffffff;
+	background-color:  #ff3d00;
+}
+#secretbluegrey{
+	color: #ffffff;
+	background-color:  #607d8b;
+}
+
+#secretyellow{
+	color: #ffffff;
+	background-color:  yellow;
+}
+#posts a {text-decoration:none;
+background:none; 
+	color:white; 
+	opacity:1;
+}
+
+#posts a:hover{
+color:white;
+}
+
+
+</style>
+<script type="text/javascript">
+function resizeIframe(obj) {
+    //obj.style.height = (obj.contentWindow.document.#posts.scrollHeight + 75) +'px';
+    var jkm=document.getElementById("fbcomments");
+    jkm.style.top=(obj.contentWindow.document.#posts.scrollHeight + 125) +'px';
+  }
+	</script>
+
+{% endblock %}
+
+
+{% block moovon %}
+<div class="container-fluid" style="padding-top: 75px;">
+
+<div class="row">
+<div class="col-lg-offset-4 col-lg-6 col-md-offset-4 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6 ">
+	<img class="img-responsive" src="../static/images/blogheader.png">
+</div>
+</div>
+
+<div class="row-fluid">
+<div id="resfont" class="col-lg-9 col-md-9 col-sm-9 col-xs-9 " style="margin-top: 20px;">
+
+{% block blogpost %}
+{% endblock %}
+{% block fbcomment %}
+{% endblock %}
+</div>
+
+
+
+<!--posts-->
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-family: Alice;background-color:#0288d1; margin-top: 20px; border:1px white solid;" id="posts">
+<img class="img-responsive" src="../static/images/blogrecentpost.png"><br>
+	<a href="{{ url_for('iitjee') }}"  title="secret hacks, tricks, tips for jee" style="color:yellow;">7. Secrets Hacks, tricks, tips for JEE</a><br>
+	<a href="{{ url_for('motivationalstory1') }}"  title="Motivation Story-1" style="color:white;">6.Motivational Story-1</a><br>
+    <a href="{{ url_for('conclusion2015') }}"  title="Summarizing 2015!" style="color:yellow;">5.Summing up 2015!</a><br>
+    <a href="{{ url_for('pytoexeusingcxfreeze') }}"  title="Convert .py python files to .exe using cx_Freeze !" style="color:white;">4. Convert .py python files to .exe!</a><br>
+    <a href="{{ url_for('getpiponwindows') }}"  title="Get Pip on windows!" style="color:yellow;">3. Get Pip on windows!</a><br>
+    <a href="{{ url_for('installubuntu') }}"  title="HOW TO INSTALL UBUNTU USING BOOTABLE PEN-DRIVE!" >2. Install Ubuntu (Bootable pendrive)</a><br>
+	<a href= "{{ url_for('loveschool') }}"  title="Admission to Love School." style="color: yellow;"> 1. Admission to Love School.</a>
+
+</div>
+</div><!--row-fluid-->
+</div><!--container-fluid-->
+
+{% endblock %}
+

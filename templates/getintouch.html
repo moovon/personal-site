@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block css %}
+
+<style>
+body{
+   /*background-image: url("../static/images/b206.jpg"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+    /*background-repeat: no-repeat;*/
+    background-color: #03a9f4;
+background-size: 100% 100%;
+background-attachment: fixed;
+color: #81d4fa;
+  }
+  </style>
+{% endblock %}
+
+{% block beforebody %}
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/56d67cd43867c06a63e13749/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+{% endblock %}
+
+
+{% block moovon %}
+<div class="container-fluid" style="padding-top: 125px;">
+<div class="row">
+<div class="col-md-6 col-md-offset-4 col-sm-12 ccol-lg-6 col-lg-offset-4 col-xs-12 ">
+<img class="img-responsive" id="contacthead" src="static/images/getintouch.png" onMouseOver="this.src='../static/images/getintouch2.png'" onMouseOut="this.src='../static/images/getintouch.png'">
+</div>
+</div>
+<div class="row">
+<div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-1 col-lg-8 col-lg-offset-1 col-xs-8 col-xs-offset-1">
+<p id="resfont" style="font-family:'cursive', Comic Sans, Comic Sans MS; color: white;">Any kind of message that you wanna share with me,simply any kind, just ping me up without any hesitation.<br>
+Any information, any sort of query, or any help. <br>
+You can freely contact me any time by via any following way.</p>
+
+<div  style="font-family:'cursive',Comic Sans, Comic Sans MS; color: white;" id="resfont"><img class="grow"src="../static/images/mail.png">  Shoot me a mail :  <text style="cursor:url(../static/images/mail2.png),auto" > moovonjkm@gmail.com    /   sunny@moovon.me </text> </div>
+<br>
+<div style="font-family:'cursive',Comic Sans, Comic Sans MS; color: white;" id="resfont"><img class="grow" src="../static/images/phone.png">    call/whatsapp me at :<a href="tel:+91-967-849-2053"><text style="cursor:url(../static/images/phone2.png),auto" >+91-9678492053</text></a>
+</div>
+<br>
+<div style="font-family:'cursive',Comic Sans, Comic Sans MS; color: white;" id="resfont"><img  class="grow" src="../static/images/home.png">  Reach me at:    <br>Botertal,  Meherpur, Mazargram,
+Silchar-788015,  
+Assam,  
+India.</div>
+
+<br><br>
+</div>
+</div>
+
+<!--
+<div class="row">
+<div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-1 col-lg-8 col-lg-offset-1 col-xs-8 col-xs-offset-1">
+  {% if success %}
+    <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Thank You!</strong> Your message has been successfully sent. I will get back to you pretty soon. Cheers! <img src="../static/images/smiley.png">
+    </div>
+  
+  {% else %}  
+   {% for message in form.name.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.email.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.subject.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    
+    {% for message in form.message.errors %}
+      <div class="flash">{{ message }}</div>
+    {% endfor %}
+    <div id="6th" style="font-family:'cursive',Comic Sans, Comic Sans MS; color: white;"><img class="grow" src="../static/images/message.png">  LEAVE A MESSAGE<br><br></div>
+    <form id="7th" style="font-family:'cursive',Comic Sans, Comic Sans MS; color: black;" action="{{ url_for('getintouch') }}" method=post style="color:#000000;">
+    <header>
+    <h1>MESSAGE/SUGGESTION/FEEDBACK</h1>
+  </header>
+      {{ form.hidden_tag() }}
+      
+      {{ form.name(placeholder="name")}}
+
+      {{ form.email(placeholder="email") }}
+      
+ 
+      {{ form.subject(placeholder="subject[if any]") }}
+      
+
+      {{ form.message(placeholder="Type your message/feedback/suggestions here freely and frankly") }}
+      
+      {{ form.submit }}
+    </form>
+  
+  {% endif %}
+  </div>
+</div>
+confact form-->
+<br><br><br><br><br><br><br><br>
+</div>
+{% endblock %} 
+
+

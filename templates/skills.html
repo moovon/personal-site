@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+  
+{% block css %}
+<style>
+body{
+   background-image: url("../static/images/skillcase.png"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+
+    /*background-repeat: no-repeat;*/
+background-size: 100% 100%;
+background-attachment: fixed;
+color:black;
+  }
+  </style>
+{% endblock %}
+
+
+{% block content %}
+<a style="position: absolute; top:560px; left:725px;color:white;" href="{{ url_for('cp') }}">CLICK HERE to know about my coding profiles</a>
+{% endblock %}
+
+
+
+{% block main %}
+<!--footer starting-->
+<div  class="col-lg-12 col-md-12 col-xs-12 col-sm-12" id="contactmefooter" style="top: 700px;">
+<footer class="footer-distributed">
+<div class="footer-left">
+<h3>MOOVON<span>JKM</span></h3>
+<p class="footer-links">
+<a href="{{ url_for('home') }}">Home</a>
+.<a href="{{ url_for('cp') }}">Competitive Coding</a>
+.<a href="{{ url_for('projects') }}">Projects</a>
+·<a href="moovojkm.wordpress.com">Blog</a>
+·<a href="{{ url_for('aboutme') }}">AboutMe</a>
+·<a href="{{ url_for('getintouch') }}">ContactMe</a>
+</p>
+<p class="footer-company-name">SunnyMazumder &copy; 2015</p>
+</div>
+<div class="footer-center">
+<div>
+<img class="grow" src="../static/images/place.png"><p style="font-size:12px;" >Botertal,Meherpur <br>Silchar-788015, India. </p>
+</div>
+<div>
+<img class="grow" src="../static/images/phone.png">
+<p style="font-size:12px;">+91 9678492053</p>
+</div>
+<div>
+<img class="grow" src="../static/images/mail.png">
+<p style="font-size:12px;"><a href="mailto:moovonjkm@gmail.com">moovnjkm@gmail.com</a></p>
+</div>
+</div>
+<div class="footer-right">
+<p class="footer-company-about">
+<span style="font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;" >Sunny Mazumder</span>
+It is a non-commerical site.<br>
+This site is powered by <a href="http://flask.pocoo.org/">Flask</a>.
+<br>You can find the entire code here : <a href="https://github.com/moovon/sunnymazumder">github</a>.
+<div class="footer-icons">
+<a href="http://www.facebook.com/moovon" target="_blank" title="facebook"><img  class="grow"src="../static/images/fb.png"></a>
+<a href="https://twitter.com/moovonjkm" target="_blank" title="twitter"><img class="grow" src="../static/images/twitter2.png"></a>
+<a href="https://in.linkedin.com/pub/sunny-mazumder/7a/4a3/54a" target="_blank" title="linkedIn"><img class="grow" src="../static/images/linkedin.png"></a>
+<a href="https://github.com/moovon/" target="_blank" title="github"><img class="grow" src="../static/images/github2.png"></a>
+</div>
+</div>
+</footer>
+</div>
+<!--footer ending-->
+      {% endblock %}

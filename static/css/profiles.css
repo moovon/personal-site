@@ -1,0 +1,64 @@
+/**
+ * CSS3 social icon hover effect
+ * Read more on my blog: http://webbb.be/blog/
+ */
+
+body {
+    /*background: #f06;
+    background: linear-gradient(45deg, #f06, yellow);
+    min-height: 100%;*/
+    /*background-image: url("../images/profy.png");*/
+    background-color: #03a9f4;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+a,a:visited { color: #fff; }
+a:hover { color: #fff; }
+
+.social {
+    float: left;
+    margin: 2em 2em; width: 100px; height: 100px;   
+    display: block; text-align: center; line-height:103px; color: #fff;
+    
+    position: relative;
+    transform:rotateY(0deg);
+    transition:transform .25s ease-out;
+    transform-style:preserve-3d;
+}
+.social > div {
+    width: 100px; height: 100px; background: #fff;
+    position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+    transform:translateZ(40px);
+}
+.social >.back {
+    background: #3B5998; font-size: 3em;
+    transform:rotateY(-100deg) translateZ(40px);
+}
+
+/*  Social Media Colors 
+    Facebook #3B5998
+    Flickr #FE0883
+    Foursquare #8FD400
+    Google+ #C63D2D
+    Instagram #4E433C
+    Linkedin #4875B4
+    Tumblr #2B4964
+    Twitter #33CCFF
+    Vimeo #86B32D
+    Youtube #FF3333
+    Dribbble #ea4c89
+*/
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-quora > .back { background: #BC2017; }
+.social.social-codechef > .back { background: #ffffff; }
+.social.social-coding > .back { background: #ffffff; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-hackerearth > .back { background: #194673; }
+
+/* Hover */
+.social:hover {
+    transform: rotateY(100deg);
+}

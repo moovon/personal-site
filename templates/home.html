@@ -1,0 +1,268 @@
+{% extends "layout.html" %}
+
+{% block css%}
+<meta charset="UTF-8" />
+        <meta name="description" content="Animated Text and Icon Menu with jQuery" />
+        <meta name="keywords" content="jquery, menu, navigation, sliding, animation, icon" />
+    <meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="../static/css/style2.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/stimenu.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Wire+One&v1' rel='stylesheet' type='text/css' />
+    <link href="{{ url_for('static', filename='css/style2.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/stimenu.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aladin" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+<style type="text/css">
+
+
+body{
+/*background-color: #03a9f4;*/
+background-image: url("../static/images/jkmbacky3.png");
+background-repeat:no-repeat;
+/*adds responsiveness to the image*/
+/*background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+/*adds responsiveness to the image*/
+z-index: -2;
+}
+
+
+html,body {
+max-width: 100%;
+/*    overflow-y: scroll;
+overflow-x: hidden;*/
+}
+/*body { /* removes the width overflow*/
+/*  overflow-x: hidden;
+}
+.hidden-thing {
+position: absolute;
+left: 100%;
+width: 50px;
+height: 50px;
+opacity: 0;
+}*/
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+
+</script>
+{% endblock %}
+
+
+{% block moovon %}
+<div class="container-fluid" style="padding-top: 75px;">
+<div class="row" style="padding-top: 100px;">
+    <div class="col-lg-offset-4 col-lg-3 col-md-offset-4 col-md-3 col-sm-offset-4 col-sm-6 col-xs-offset-2 col-xs-8 ">
+    <span style=" cursor:none;"><img class="img-responsive" id="myButton" src="../static/images/profile.png"  style=""></span>
+    </div>
+</div>
+<img class="img-responsive" id="myButton" src="../static/images/profile8.png" style="position:absolute; top:1080px; left:425px;  opacity: 0.4;">
+<!--skillcase-->
+
+<!--cp-->
+<div style="position:absolute; top: 2350px; left: 400px;" >
+<img id="cpprofiles"  src="../static/images/cp1.png">
+</div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+<div>
+<input type="image" src="../static/images/buttoncp.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttoncp2.png'" onMouseOut="this.src='../static/images/buttoncp.png'"  style="position:absolute; top: 2250px; left: 520px; " onclick="cp();">
+
+<input type="image" src="../static/images/buttoncc.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttoncc2.png'" onMouseOut="this.src='../static/images/buttoncc.png'"  style="position:absolute; top: 2350px; left: 880px; " onclick="codechef();">
+<input type="image" src="../static/images/buttonspoj.png" class="btTxt submit" id="clickme4" onMouseOver="this.src='../static/images/buttonspoj2.png'" onMouseOut="this.src='../static/images/buttonspoj.png'"  style="position:absolute; top: 2400px; left: 880px; " onclick="spoj();">
+<input type="image" src="../static/images/buttonhe.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttonhe2.png'" onMouseOut="this.src='../static/images/buttonhe.png'"  style="position:absolute; top: 2450px; left: 880px; " onclick="hackerearth();">
+<input type="image" src="../static/images/buttonother.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttonother2.png'" onMouseOut="this.src='../static/images/buttonother.png'"  style="position:absolute; top: 2500px; left: 880px; " onclick="others();">
+</div>
+
+<!--cp-->
+
+<!--motivation-->
+<p style="position:absolute; left: 300px; top:2860px; color:white;">“People often say that motivation doesn't last. Well, neither does bathing - that's why it is recommended daily.”<br>
+<text style=" font-size:12px;"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These inspiring quotes uplifts me when I am down and inspires me to keep working hard.</em></text>
+</p>
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3" style="position:absolute; left: 50px; top:2950px;">
+<ul class="demo-1 effect">
+<li>
+<p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">  Arise awake and stop not till the goal is reached.
+</li>
+<li><img class="top" src="../static/images/page1a.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 360px;top:2950px;">
+<ul class="demo-1 effect">
+<li>
+     <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;"> The mind is everything. What you think you become.</p>
+</li>
+<li><img class="top" src="../static/images/buddha.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 670px;top:2950px;">
+<ul class="demo-1 effect">
+<li>
+    <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;"> A new command I give you: Love one another. As I have loved you, so you must love one another.</p>
+</li>
+<li><img class="top" src="../static/images/jesus.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 980px;top:2950px;">
+<ul class="demo-1 effect">
+<li>
+    <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">“The journey is the reward” </p>
+</li>
+<li><img class="top" src="../static/images/parallax8.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 50px;top:3160px;">
+<ul class="demo-1 effect">
+<li>
+    <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">“The only thing standing between you and your goal is the bullshit story you keep telling yourself as to why you can't achieve it.”  </p>
+</li>
+<li><img class="top" src="../static/images/belfort.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 360px;top:3160px;">
+<ul class="demo-1 effect">
+<li>
+    <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">If you are born poor its not your mistake, But if you die poor its your  mistake. </p>
+</li>
+<li><img class="top" src="../static/images/billgates.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 670px;top:3160px;">
+<ul class="demo-1 effect">
+<li>
+    <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on </p>
+</li>
+<li><img class="top" src="../static/images/sheryl.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 980px;top:3160px;">
+<ul class="demo-1 effect">
+<li>
+      <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">  Two roads diverged in a wood, and I took the one less traveled by, And that has made all the difference.</p>
+</li>
+<li><img class="top" src="../static/images/robertfrost.jpg" alt=""/></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 50px;top:3370px;">
+<ul class="demo-1 effect">
+<li>
+      <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;"> I think that's the single best piece of advice: constantly think about how you could be doing better and questioning yourself.</p>
+</li>
+<li><img class="top" src="../static/images/elon.jpg" alt=""/></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 360px;top:3370px;">
+<ul class="demo-1 effect">
+<li>
+      <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">        If you just work        on stuff that you like       and you're passionate about      you don't have to have      a master plan with how       things will play out.</p>
+</li>
+<li><img class="top" src="../static/images/parallaxzuck.jpg" alt=""/></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 670px;top:3370px;">
+<ul class="demo-1 effect">
+<li>
+      <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">        I think everybody should get      rich and famous and do      everything      they ever dreamed of      so they can see that      it's not the answer. </p>
+</li>
+<li><img class="top" src="../static/images/jimcarrey.jpg" alt=""/></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 " style="position:absolute; left: 980px;top:3370px;">
+<ul class="demo-1 effect">
+<li>
+      <p style="font-size:20px; font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">        A burning desire, to be and      to do, is the starting point,      from which the dreamer must take      off. Dreams are not born off      indifference, laziness, or lack of      ambition.</p>
+</li>
+<li><img class="top" src="../static/images/napoleanhill.jpg" alt=""/></li>
+</ul>
+</div>
+
+<p id="quotes" style="position:absolute; left:150px; top:3620px; color:white;font-family: Quicksand;  font-size:20px;"></p>
+<script type="text/javascript">
+    var text = [
+    "There  is  no  secret  ingredient.  To  make  something  special  you  have  to  believe  its  special.  -  Kung  Fu  Panda ", 
+    "It's only after we've lost everything that we're free to do anything. - Fight Club", 
+    "The best way to do something is to start. Every other thing which seems important to you now will come to place automatically. Just do it. - Unknown",
+    "It took me 17 years & 114 days to become an overnight success – Lionel Messi",
+    "All it takes is 20 seconds of insane courage and great things will happen. ― Benjamin Mee, We Bought a Zoo ",
+    "Never give up on your dream, fight your hardest for it. -  The Pursuit of Happyness",
+    "Believe in yourself. Your confidence will lead you to success and happiness.- The Shrek",
+    " Make every moment count, enjoy your life time and don’t waste it. - Lords of the Ring",
+    "It’s what you do right now that makes a difference. – from Black Hawk Down",
+    " Instead of seeking for happiness, live the moment and that’s where happiness exists. - The Beach",
+    "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible. - Francis of Assisi",
+    "Whatever the mind of man can conceive and believe, it can achieve. –Napoleon Hill",
+    "The best time to plant a tree was 20 years ago. The second best time is now. –Chinese Proverb",
+    "The only way to do great work is to love what you do. – Steve Jobs",
+
+    
+    ];
+    var counter = 0;
+    var elem = document.getElementById("quotes");
+    setInterval(change, 4000);
+    function change() {
+     elem.innerHTML = text[counter];
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+    }
+    </script>
+<!--motivation-->
+
+
+<!--conclusion-->
+
+            <div style="position:absolute; left: 150px;top:3800px;">
+            <ul id="sti-menu" class="sti-menu">
+                 <li data-hovercolor="#ff395e">
+                    <a href="{{ url_for('aboutme') }}" >
+                        <h2 style="color:#03a9f4; font-size:12px;" data-type="mText" class="sti-item">About Me<br><em><text style="color:white; font-size:10px;" >know more about me</text></em></h2>
+                        <h3 data-type="sText" class="sti-item"></h3>
+                        <span data-type="icon" class="sti-icon sti-icon-me sti-item"></span>
+                    </a>
+                </li>
+                <li data-hovercolor="#ff395e">
+                    <a href="https://www.github.com/moovon" target="blank" >
+                        <h2 style="color:#03a9f4;font-size:12px;" data-type="mText" class="sti-item">Codes<br><em><text style="color:white; font-size:10px;" >Check out my codes</text></em></h2>
+                        <h3 data-type="sText" class="sti-item"></h3>
+                        <span data-type="icon" class="sti-icon sti-icon-code sti-item"></span>
+                    </a>
+                </li>
+
+                <li data-hovercolor="#ff395e">
+                    <a href="{{ url_for('getintouch') }}" >
+                        <h2 style="color:#03a9f4;font-size:12px;" data-type="mText" class="sti-item">Get-in-Touch<br><em><text style="color:white; font-size:10px;" >Ping me</text></em></h2>
+                        <h3 data-type="sText" class="sti-item"></h3>
+                        <span data-type="icon" class="sti-icon sti-icon-chat sti-item"></span>
+                    </a>
+                </li>
+
+                <li data-hovercolor="#ff395e">
+                    <a href="../static/sunnymazumder.pdf">
+                        <h2 style="color:#03a9f4;font-size:12px;" data-type="mText" class="sti-item">Resume<br><em><text style="color:white; font-size:10px;" >Download my Resume</text></em></h2>
+                        <h3 data-type="sText" class="sti-item"></h3>
+                        <span data-type="icon" class="sti-icon sti-icon-resume sti-item"></span>
+                    </a>
+                </li>
+                </ul>
+
+</div>
+
+<!--conclusion-->
+<div style="position:absolute; left: 450px;top:4250px;">...</div>
+</div><!--container-->
+
+
+{% endblock %}
+
+

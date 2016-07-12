@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+  
+{% block css %}
+<style>
+body{
+   /*background-image: url("../static/images/cpback.png"); /*7,14,20,25,36,37,42,44,47,54,57png,58,60*/
+
+    /*background-repeat: no-repeat;*/
+       background-color: #03a9f4;
+background-size: 100% 100%;
+background-attachment: fixed;
+
+
+  }
+
+#tools{
+	z-index: -2;
+}
+
+  </style>
+{% endblock %}
+
+
+{% block moovon %}
+<div class="container-fluid" style="padding-top: 125px;">
+
+<div class="row" style="">
+<div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 col-sm-12  col-xs-12 ">
+<input  type="image"  class="form-control" src="../static/images/buttoncp.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttoncp2.png'" onMouseOut="this.src='../static/images/buttoncp.png'"  style="background: none; border: none; height: 50px;" onclick="cp();">
+</div>
+</div>
+
+<div class="row" style="padding-top: 20px;">
+<div class="col-lg-offset-3 col-lg-4 col-md-offset-4 col-md-5 col-sm-7  col-xs-7 ">
+      <img class="img-responsive" id="cpprofiles" style="" src="../static/images/cp1.png">
+</div>
+<div class="col-md-2 col-lg-2 col-xs-5 col-sm-5">
+      <input  class="form-control" type="image" src="../static/images/buttoncc.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttoncc2.png'" onMouseOut="this.src='../static/images/buttoncc.png'"  style=" background: none; border: none; height: 50px;" onclick="codechef();">
+      <br>
+      <input class="form-control" type="image" src="../static/images/buttonspoj.png" class="btTxt submit" id="clickme4" onMouseOver="this.src='../static/images/buttonspoj2.png'" onMouseOut="this.src='../static/images/buttonspoj.png'"  style="background: none; border: none; height: 50px;" onclick="spoj();">
+      <br>
+      <input class="form-control" type="image" src="../static/images/buttonhe.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttonhe2.png'" onMouseOut="this.src='../static/images/buttonhe.png'"  style="background: none; border: none; height: 50px;" onclick="hackerearth();">
+      <br>
+      <input class="form-control" type="image" src="../static/images/buttonother.png" class="btTxt submit" id="clickme3" onMouseOver="this.src='../static/images/buttonother2.png'" onMouseOut="this.src='../static/images/buttonother.png'"  style="background: none; border: none; height: 50px;" onclick="others();">
+</div>
+<div style="position:absolute; top:700px;">...</div>
+</div>
+</div>
+        {% endblock %}

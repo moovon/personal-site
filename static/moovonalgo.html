@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Moovon's Algorithm</title>
+<style type="text/css">
+body{
+	font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+	background-color: #eeeeee;
+}
+</style>
+</head>
+<body>
+
+<text style="font-size:24px; font-weight:5px; color:#03a9f4; border-radius: 10%;" >Moovon's Algorithm</text><br>
+<text style="font-size:12px; color: #607d8b;" >8<sup>th</sup> February'2016</text>
+<text style="font-size:10px; color: #607d8b;" ><em>-Moovon</em></text>
+<p style="background : ">
+<br>
+<br>
+Enter Your skin tone Buoy (1-10) : <input type="number" id="boy" name="text1" onKeyUp="if(this.value>10){this.value='10';}else if(this.value<1){this.value='1';}" min="1" max="10"><br>
+Enter the Girl's skin tone (1-10) &nbsp; &nbsp;: <input type="number" id="girl" name="text1"  min="1" max="10" onKeyUp="if(this.value>10){this.value='10';}else if(this.value<1){this.value='1';}"><br><br>
+<button onclick="myFunction()">Moovon's Algorithm's Result</button><br>
+<p style="font-size:24px; font-weight:6px; color:#03a9f4;" id="demo"></p>
+    <script>
+      function myFunction() {
+        var y = document.getElementById("boy").value;
+        var z = document.getElementById("girl").value;
+        if(Number(y)>Number(z)) document.getElementById("demo").innerHTML = "Khujli jyada hein kya ! Kala baccha chahiye tumko????? ";
+        else if(Number(y)<Number(z))document.getElementById("demo").innerHTML = "Go Get the girl ! She is the Honey You need ! Go grab her";
+        else if(Number(y)==10 && Number(z)==10) document.getElementById("demo").innerHTML = "Your Jodi is the best of best ! Happy married life :) Ghore bacche mubarak ho :) ";
+		else if(Number(y)==1 && Number(z)==1) document.getElementById("demo").innerHTML = "Kala Baccha Mubarak Ho :P ";
+        else document.getElementById("demo").innerHTML = "She's not a bad option , but still you may find someone better ! ....Still if you insist , Have her :) ";
+
+      }
+
+    </script>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+{% extends "blog.html" %}
+
+{% block blogpost %}
+
+<div style="font-family: Alice;line-height: 150%;color:white;  background-color:   #607d8b; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; padding-top: 20px;">
+<text style="font-size: 24px; font-size: 2.5vw; font-weight:5px; color:orange; border-radius: 10%;" >How to get python-pip on windows</text><br>
+<text style="font-size: 12px; font-size: 1vw;color: #263238;" >29th December'2015</text><br><br>
+<!--post your article here-->
+<br><br><br><br>
+<p>There’s a lot of criticism for windows among developers.But I have been a great admirer of windows all over these years.
+People would comeup with many issues in windows but given the huge variety of dealers that have to deal with eg all the
+game driver companies and others, windows is a brilliant product. Linux never cares whether you can run GTA or photoshop
+ or not. Windows does and not only for such few products , there’s a large set of customers that they have to satisfy and in that
+ process, certainmistakes will be there ofcourse. I am not a linux hater,but, a windows lover.
+</p>
+<br><br>
+
+<p>And I don’t think for a general programmer , windows or linux creates so huge difference. Windows have its command line,too
+ and the powershell is quite comparable to bash.And even if you have issues with it, cygwin is always there to give you the
+ bash feeling in windows.
+</p>
+<br><br><br><br>
+
+<p>Ok, lets come to the point. The windows lover and the python lovers often comes to a mismatch regarding installing the
+python libraries using pip, which is supported in linux terminal but not in windows command prompt by default.
+<br>
+So Now we would enable the pip in windows command prompt
+by following the given steps :
+
+<br><br>
+1) download the file and save it as get-pip.py
+from : 
+<a href="https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py" target="blank">here</a>
+<br><br>
+2) run “>python get-pip.py”
+<br><br>
+3)add the “C:/python34/scripts” to the environment variable
+(my computer->properties->advanced system settings->advanced
+->Environment Variables->variable path-> add “python path after the ‘;’ 
+like xyzwhatever ; C:\python34\scripts;”)
+<br><br>
+4) Now start pipping
+</p>
+
+<!--article end-->
+</div>
+{% endblock %}
+
+
+{% block fbcomment %}
+<div id="fbcomments" style="" class="fb-comments" data-href="http://www.moovon.me/blog" data-width="auto" data-numposts="5"></div>
+<div style="position:relative;top:220px;">...</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "blog.html" %}
+
+{% block blogpost %}
+<div style="font-family: Alice;line-height: 150%;color:white;  background-color:   #607d8b; padding-left: 20px; padding-bottom: 20px; padding-right: 20px; padding-top: 20px;">
+<text style="font-size: 24px; font-size: 2.5vw; font-weight:5px; color:orange; border-radius: 10%;" >Convert .py python files to .exe using cx_Freeze ! </text><br>
+<text style="font-size: 12px; font-size: 1vw;color: #263238;" >29<sup>th</sup> December'2015</text><br><br>
+<!--post your article here-->
+<br><br><br><br>
+<em>(ensure you have pip installed incase you are using windows, else read the "Get pip on windows"-post.no.3)</em>
+
+<p style="background-color:white; color:#757575;">&nbsp;&nbsp;&nbsp;&nbsp;$ pip3 install cx_Freeze</p>
+
+
+
+<br><br>
+1) Create a <strong>setup.py</strong> file and put in the same directory as of the .py file you want to convert.
+<br><br>
+2)Copy paste the following lines in the setup.py and do change the "filename.py" into the filename you specified.
+<br><br>
+
+
+
+<xmp style="font-size: 12px; font-size: 1vw;background-color: white;color: #607d8b">
+from cx_Freeze import setup, Executable
+setup(
+	name="GUI PROGRAM",
+	version="0.1",
+	description="write your description here",
+	executables=[Executable("file_name.py", base="Win32GUI")],
+	)
+
+</xmp>
+
+
+
+
+
+3) Run the setup.py  <strong>$python setup.py build</strong>
+
+<br><br>
+4)A new directory will be there there called "build". Inside it you will get your .exe file to be ready to launced directly.<br><br>
+(Make sure you copy paste the images files and other external files into the build directory)
+
+<!--article end-->
+</div>
+{% endblock %}
+
+
+{% block fbcomment %}
+<div id="fbcomments" style="" class="fb-comments" data-href="http://www.moovon.me/blog" data-width="auto" data-numposts="5"></div>
+<div style="position:relative;top:220px;">...</div>
+{% endblock %}
